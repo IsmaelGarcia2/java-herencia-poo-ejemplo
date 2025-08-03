@@ -1,28 +1,21 @@
-# Ejemplo de Herencia en Java con POO 🧬
+# Proyecto POO - Herencia y Principios SOLID
 
-Este proyecto demuestra el uso del principio de **herencia** en la Programación Orientada a Objetos (POO) utilizando Java. Incluye clases base y derivadas, uso de constructores y sobreescritura del método `toString()`.
+## Descripción
+Este proyecto es un ejemplo de programación orientada a objetos en Java que implementa herencia, encapsulamiento, y principios SOLID. Se modelan clases como `Alumno`, `Profesor`, `AlumnoInternacional`, y otras, mostrando la relación entre ellas.
 
-## 🧩 Estructura del Proyecto
-
-- `Persona.java` → Clase base con atributos comunes.
-- `Alumno.java` → Hereda de Persona.
-- `AlumnoInternacional.java` → Hereda de Alumno.
-- `AlumnoInternacionalDiplomatico.java` → Hereda de AlumnoInternacional.
-- `Profesor.java` → Hereda de Persona.
-
-### Ejemplos de ejecución
-
-- `EjemploHerencia.java` → Muestra cómo funciona la herencia básica entre las clases.
-- `EjemploHerenciaConstructor.java` → Uso de constructores para inicializar objetos de distintas clases hijas.
-- `EjemploHerenciaToString.java` → Ejemplo de polimorfismo sobrescribiendo el método `toString()` en cada clase.
-
-## 🚀 Tecnologías
-
+## Tecnologías y Herramientas
 - Java 17
-- IntelliJ IDEA
-- Git
+- IDE IntelliJ IDEA
+- Git para control de versiones
 
-## 📁 Estructura de paquetes
+## Características Principales
+- Uso de **herencia** para modelar diferentes tipos de alumnos y profesores.
+- Implementación de **relación de dependencia** entre clases (por ejemplo, un `Profesor` puede depender de `Asignatura`).
+- Aplicación del principio **Open/Closed** (Abierto/Cerrado): las clases están abiertas para extensión pero cerradas para modificación, facilitando agregar nuevas funcionalidades sin alterar el código existente.
+- Encapsulamiento con modificadores de acceso adecuados.
+- Uso de paquetes para organizar el código.
+
+## Estructura del Proyecto
 src/
 └── org/
 └── ismaelg/
@@ -37,6 +30,19 @@ src/
 ├── AlumnoInternacionalDiplomatico.java
 └── Profesor.java
 
+## Cómo ejecutar
+1. Clonar el repositorio.
+2. Abrir el proyecto en IntelliJ IDEA o tu IDE preferido.
+3. Ejecutar la clase principal `Main` (o la que contenga el método `main`).
+4. Ver resultados en la consola.
+
+## Principios SOLID Aplicados
+- **S**: Single Responsibility — cada clase tiene una única responsabilidad clara.
+- **O**: Open/Closed — las clases están diseñadas para ser extendidas sin modificarse directamente.
+- **L, I, D**: (A implementar en futuras versiones)
+
+## Dependencias
+- No utiliza librerías externas, solo Java estándar.
 
 ## ✍️ Autor
 
